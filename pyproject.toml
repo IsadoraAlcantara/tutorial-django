@@ -8,7 +8,7 @@ authors = [
 dependencies = [
     "django>=5.0.3",
 ]
-requires-python = "==3.11.*"
+requires-python = ">=3.10"
 readme = "README.md"
 license = {text = "MIT"}
 
@@ -24,3 +24,7 @@ dev = [
 
 [tool.black]
 line-length = 120
+[[tool.pdm.autoexport]]
+filename = "requirements.txt"
+without-hashes = "true"
+
