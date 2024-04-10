@@ -5,7 +5,7 @@
 groups = ["default", "dev"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:e8e24857d44f13f9cb6337f4946d8a864d72c0991ccd1fe6b1e7c2049a6a328a"
+content_hash = "sha256:ef3fbe13043aa6f7753ead83308dad28fa54748978b3949edfd3da9c250feaa6"
 
 [[package]]
 name = "asgiref"
@@ -136,6 +136,22 @@ files = [
 ]
 
 [[package]]
+name = "djangorestframework-simplejwt"
+version = "5.3.1"
+requires_python = ">=3.8"
+summary = "A minimal JSON Web Token authentication plugin for Django REST Framework"
+groups = ["default"]
+dependencies = [
+    "django>=3.2",
+    "djangorestframework>=3.12",
+    "pyjwt<3,>=1.7.1",
+]
+files = [
+    {file = "djangorestframework_simplejwt-5.3.1-py3-none-any.whl", hash = "sha256:381bc966aa46913905629d472cd72ad45faa265509764e20ffd440164c88d220"},
+    {file = "djangorestframework_simplejwt-5.3.1.tar.gz", hash = "sha256:6c4bd37537440bc439564ebf7d6085e74c5411485197073f508ebdfa34bc9fae"},
+]
+
+[[package]]
 name = "drf-spectacular"
 version = "0.27.2"
 requires_python = ">=3.7"
@@ -249,6 +265,17 @@ groups = ["dev"]
 files = [
     {file = "platformdirs-4.2.0-py3-none-any.whl", hash = "sha256:0614df2a2f37e1a662acbd8e2b25b92ccf8632929bc6d43467e17fe89c75e068"},
     {file = "platformdirs-4.2.0.tar.gz", hash = "sha256:ef0cc731df711022c174543cb70a9b5bd22e5a9337c8624ef2c2ceb8ddad8768"},
+]
+
+[[package]]
+name = "pyjwt"
+version = "2.8.0"
+requires_python = ">=3.7"
+summary = "JSON Web Token implementation in Python"
+groups = ["default"]
+files = [
+    {file = "PyJWT-2.8.0-py3-none-any.whl", hash = "sha256:59127c392cc44c2da5bb3192169a91f429924e17aff6534d70fdc02ab3e04320"},
+    {file = "PyJWT-2.8.0.tar.gz", hash = "sha256:57e28d156e3d5c10088e0c68abb90bfac3df82b40a71bd0daa20c65ccd5c23de"},
 ]
 
 [[package]]
